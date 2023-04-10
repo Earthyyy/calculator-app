@@ -1,6 +1,5 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  mode: 'jit',
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
@@ -39,13 +38,6 @@ export default {
           },
 
         }
-      },
-      boxShadow: {
-        'key': {
-          'primary': 'inset 0px -4px 0px var(--color-key-shadow)',
-          'secondary': 'inset 0px -4px 0px var(--color-key-shadow-secondary)',
-          'tertiary': 'inset 0px -4px 0px var(--color-key-shadow-tertiary)',
-        },
       },
     }
   },
