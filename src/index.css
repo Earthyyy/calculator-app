@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    font-family: 'League Spartan', sans-serif;
+
+
+    --color-text-header-display: hsl(0, 0%, 100%);
+    --color-text-key-primary: hsl(221, 14%, 31%);
+    --color-text-key-secondary: hsl(0, 0%, 100%);
+    --color-text-key-tertiary: hsl(0, 0%, 100%);
+
+    --color-main-background: hsl(222, 26%, 31%);
+    --color-toggle-background: hsl(223, 31%, 20%);
+    --color-screen-background: hsl(224, 36%, 15%);
+
+
+    --color-key-background: hsl(225, 21%, 49%);
+
+    --color-key-shadow: hsl(224, 28%, 35%);
+
+    --color-key-background-secondary: hsl(6, 63%, 50%);
+
+    --color-key-shadow-secondary: hsl(6, 70%, 34%);
+
+    --color-key-background-tertiary: hsl(30, 25%, 89%);
+
+    --color-key-shadow-tertiary: hsl(28, 16%, 65%);
+
+  }
+
+  .theme-light {
+
+
+    --color-text-header-display: hsl(60, 10%, 19%);
+    --color-text-key-primary: hsl(60, 10%, 19%);
+    --color-text-key-secondary: hsl(0, 0%, 100%);
+    --color-text-key-tertiary: hsl(0, 0%, 100%);
+
+
+    --color-main-background: hsl(0, 0%, 90%);
+    --color-toggle-background: hsl(0, 5%, 81%);
+    --color-screen-background: hsl(0, 0%, 93%);
+
+
+    --color-key-background: hsl(185, 42%, 37%);
+
+    --color-key-shadow: hsl(185, 58%, 25%);
+
+    --color-key-background-secondary: hsl(25, 98%, 40%);
+
+    --color-key-shadow-secondary: hsl(25, 99%, 27%);
+
+    --color-key-background-tertiary: hsl(45, 7%, 89%);
+
+    --color-key-shadow-tertiary: hsl(35, 11%, 61%);
+  }
+
+  .theme-dark {
+
+    --color-text-header-display: hsl(52, 100%, 62%);
+    --color-text-key-primary: hsl(52, 100%, 62%);
+    --color-text-key-secondary: hsl(0, 0%, 100%);
+    --color-text-key-tertiary: hsl(198, 20%, 13%);
+
+    --color-main-background: hsl(268, 75%, 9%);
+    --color-toggle-background: hsl(268, 71%, 12%);
+    --color-screen-background: hsl(268, 71%, 12%);
+
+
+    --color-key-background: hsl(281, 89%, 26%);
+    --color-key-shadow: hsl(285, 91%, 52%);
+
+    --color-key-background-secondary: hsl(176, 100%, 44%);
+    --color-key-shadow-secondary: hsl(177, 92%, 70%);
+
+    --color-key-background-tertiary: hsl(268, 47%, 21%);
+    --color-key-shadow-tertiary: hsl(290, 70%, 36%);
+  }
+
+  .primary-key {
+    box-shadow: inset 0px -4px 0px var(--color-key-shadow);
+    background-color: var(--color-key-background);
+    color: var(--color-text-key-secondary);
+  }
+
+  .secondary-key {
+    box-shadow: inset 0px -4px 0px var(--color-key-shadow-secondary);
+    background-color: var(--color-key-background-secondary);
+    color: var(--color-text-key-tertiary);
+  }
+
+  .tertiary-key {
+    box-shadow: inset 0px -4px 0px var(--color-key-shadow-tertiary);
+    background-color: var(--color-key-background-tertiary);
+    color: var(--color-text-key-primary);
+  }
+
+
+
+
+
+}
+
+
+
+
+/* Josh Comeau CSS Reset*/
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/*
+    2. Remove default margin
+  */
+* {
+  margin: 0;
+}
+
+/*
+    3. Allow percentage-based heights in the application
+  */
+html,
+body {
+  min-height: 100vh;
+}
+
+/*
+    Typographic tweaks!
+    4. Add accessible line-height
+    5. Improve text rendering
+  */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/*
+    6. Improve media defaults
+  */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/*
+    7. Remove built-in form typography styles
+  */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
