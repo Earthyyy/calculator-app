@@ -75,7 +75,7 @@ const KEYPAD = [
         span: 1,
     },
     {
-        value: "x",
+        value: "*",
         color: 'tertiary',
         span: 1,
     },

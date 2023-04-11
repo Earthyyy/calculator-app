@@ -5,7 +5,7 @@ import Keypad from './Keypad'
 
 const Calculator = () => {
   return (
-    <div className="w-[20.4375rem] max-w-[33.75rem] grid gap-[2rem]">
+    <div className="w-[20.4375rem] desktop:w-[33.75rem] grid gap-[2rem]">
         <Header/>
         <main className='grid gap-6'>
             <Display/>

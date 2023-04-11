@@ -30,10 +30,9 @@
     --color-key-background-tertiary: hsl(30, 25%, 89%);
 
     --color-key-shadow-tertiary: hsl(28, 16%, 65%);
-
   }
 
-  .theme-light {
+  .light {
 
 
     --color-text-header-display: hsl(60, 10%, 19%);
@@ -60,7 +59,7 @@
     --color-key-shadow-tertiary: hsl(35, 11%, 61%);
   }
 
-  .theme-dark {
+  .dark {
 
     --color-text-header-display: hsl(52, 100%, 62%);
     --color-text-key-primary: hsl(52, 100%, 62%);
@@ -120,6 +119,11 @@
 
 
 
+}
+@layer components {
+  .radio-btn {
+    @apply flex items-center justify-center w-4 h-4 rounded-full  cursor-pointer peer-checked:bg-key-secondary-bg hover:filter hover:brightness-[1.17];
+  }
 }
 
 
