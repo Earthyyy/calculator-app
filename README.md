@@ -40,7 +40,7 @@ Users should be able to:
 
 ### Links
 
-- [Solution URL](https://github.com/Earthyyy/calculator-app)
+- [Solution URL](https://www.frontendmentor.io/solutions/calculator-app-using-reactjs-and-tailwindcss-mDidQ11I6T)
 - [Live Site URL](https://earthyy-calculator-app.netlify.app/)
 
 ## My process
