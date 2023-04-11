@@ -20,7 +20,7 @@ const ThemeSwitcher = () => {
           </div>
 
 
-          <ul className="flex justify-between gap-3 p-[5px] bg-toggle rounded-xl" onChange={handleChange}>
+          <ul className="flex justify-between gap-2 p-[5px] bg-toggle rounded-xl" onChange={handleChange}>
             <li>
               <input type="radio" name="theme" id="default" value="default" className="hidden peer" defaultChecked/>
               <label htmlFor="default" className="radio-btn"></label>

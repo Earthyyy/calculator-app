@@ -49,7 +49,7 @@ const Key = ({value,color,span}) => {
   }
 
   return (
-    <button className={`${colSpan} ${keyStyling} w-auto h-[3.75rem] flex justify-center items-center cursor-pointer rounded-[0.3125rem] hover:filter hover:brightness-[1.2]`} onClick={handleClick}>
+    <button className={`${colSpan} ${keyStyling} w-auto h-[3.75rem] flex justify-center items-center cursor-pointer rounded-[0.3125rem] desktop:rounded-[.625rem] hover:filter hover:brightness-[1.2]`} onClick={handleClick}>
         <span className={color === 'tertiary' ? 'text-[2rem] desktop:text-[2.5rem]' : 'text-[1.25rem] desktop:text-[1.75rem]'}>{value}</span>
     </button>
   )
